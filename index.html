@@ -1,0 +1,252 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Hostel Management</title>
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand name" href="index.html">
+                <img src="https://images.rawpixel.com/image_png_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm0zMzAtcGFuZ3J1bS1sb2dvMi0wMl8xLnBuZw.png?s=PoVTNUSGX0lFasFElMFsnJwLeU3Do4kuAcUaN7FGPj8" width="45" height="40" class="d-inline-block align-center" alt="">
+                VIT Hostel
+              </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#eventSection">Events</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#permissions">Permissions and Complaints</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./signup.html">Sign Up</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+     <!--Navbar Ends and Start of Carousal-->
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active image-fluid">
+            <img src="https://vitap.ac.in/wp-content/uploads/2021/04/Central-Block-scaled.jpg" class="d-block w-100" alt="..." height="620" width="200px">
+          </div>
+          <div class="carousel-item image-fluid">
+            <img src="https://img.freepik.com/premium-photo/modern-corridor-american-school-with-lockers_841543-9430.jpg?w=1060" class="d-block w-100" alt="..." height="620px" width="200px">
+          </div>
+          <div class="carousel-item image-fluid">
+            <img src="https://img.freepik.com/free-photo/young-woman-reading-textbook-home-library-generated-by-ai_188544-26814.jpg?t=st=1691231801~exp=1691235401~hmac=713cde31365c90935a0e0638c19bf5c9d415ccdeb4d737b613790d63d58ee831&w=1060" class="d-block w-100" alt="..." height="620px" width="200px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+      
+
+      <!--Events Section-->
+
+
+      <h2 class="heading" id="eventSection">Upcoming Events</h2>
+      <marquee style="color:red;font-family:Roboto;font-style:italic;">Registrations are now Open for Hostel Students!!</marquee>
+      <div class="d-flex flex-row">
+        <div class="card col-12 col-md-4 card-style" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/sport-equipment-concept_1284-13034.jpg?w=740&t=st=1691230797~exp=1691231397~hmac=9e88046d816b8bc161fd4747aae8087a5c5798297528e75d49b41534ae985b49" class="card-img-top" alt="..." height="300px">
+            <div class="card-body text-center">
+              <p class="card-text">Inter College Sports Meet @August-September intrested Students can Participate</p>
+              <button class="btn btn-primary" id="btn1" onclick="click1()">Enroll Now</button>
+            </div>
+          </div>
+    
+          <div class="card col-12 col-md-4 card-style" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=996&t=st=1691230450~exp=1691231050~hmac=cd5351b3d72ecc70ccd4ff128cdcb89947f31c93b2f11d755cdea0dbe056c1e7" class="card-img-top" alt="..." height="300px">
+            <div class="card-body text-center">
+              <p class="card-text">National Level Hackathon Going to be Conducted on Web Development @September 2023</p>
+              <button class="btn btn-primary" id="btn2" onclick="click2()">Enroll Now</button>
+            </div>
+          </div>
+    
+          <div class="card col-12 col-md-4 card-style" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-vector/nightlife-entertainment-best-dance-club-webpage-3-flat-banners-design_1284-14165.jpg?w=740&t=st=1691230867~exp=1691231467~hmac=92f7240a567a774996ae014da35dc58ad28357143f97e1ccc6e02a97954cd13b" class="card-img-top" alt="..." height="300px">
+            <div class="card-body text-center">
+              <p class="card-text">We are Organizing a Dance Club at Our College intrested Students can give Auditions</p>
+              <button class="btn btn-primary" id="btn3" onclick="click3()">Enroll Now</button>
+            </div>
+          </div>
+      </div>
+
+      <hr style="color:black;border-width:10px;"/>
+
+    <!--Request Permisions Section-->
+    <h2 class="heading" id="permissions">Request Permissions</h2>
+    <form class="form-style">
+        <div class="form-group">
+            <label for="selectReason">Select Reason</label>
+            <select class="form-control" id="selectReason">
+                <option value="health">Health Issue</option>
+                <option value="outing">Outing</option>
+                <option value="family">Family Visit</option>
+                <option value="competition">Participating in any Competitions</option>
+                <option value="event">Organizing an Event</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-success submitbtn" onclick="redirectToForm()">Submit</button>
+    </form>
+    
+    <script>
+        function redirectToForm() {
+            const selectReason = document.getElementById("selectReason");
+            const selectedValue = selectReason.value;
+    
+            switch (selectedValue) {
+                case "health":
+                    window.location.href = "./permissionForm.html";
+                    break;
+                case "outing":
+                    window.location.href = "./permissionForm.html";
+                    break;
+                case "family":
+                    window.location.href = "./permissionForm.html";
+                    break;
+                case "competition":
+                    window.location.href = "./permissionForm.html";
+                    break;
+                case "event":
+                    window.location.href = "./permissionForm.html";
+                    break;
+                default:
+                    break;
+            }
+        }
+        </script>
+
+        <hr style="color:black;border-width:10px;"/>
+
+    <!--Complaints Section-->
+    
+    <h2 class="heading" id="complaints">Register a Complaint</h2>
+    <form class="form-style">
+        <div class="form-group">
+            <label for="selectReason">Select Reason for Complaint</label>
+            <select class="form-control" id="selectReason">
+                <option value="health">Register a Complaint</option>
+                <option value="outing">Anti Ragging</option>
+                <option value="family">Quality Less Food</option>
+                <option value="competition">Other Complaints</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-warning submitbtn" onclick="redirectToForm2()">Submit</button>
+    </form>
+    
+    <script>
+        function redirectToForm2() {
+            const selectReason = document.getElementById("selectReason");
+            const selectedValue = selectReason.value;
+    
+            switch (selectedValue) {
+                case "health":
+                    window.location.href = "./registerCom.html";
+                    break;
+                case "outing":
+                    window.location.href = "./registerCom.html";
+                    break;
+                case "family":
+                    window.location.href = "./registerCom.html";
+                    break;
+                case "competition":
+                    window.location.href = "./registerCom.html";
+                    break;
+                case "event":
+                    window.location.href = "./registerCom.html";
+                    break;
+                default:
+                    break;
+            }
+        }
+        </script>
+      <div class="container" id="reviews">
+        <h1 class="review-heading">Hostel Students Review</h1>
+        <div class="reviews">
+            <div class="review">
+                <h2 class="review-name">John Doe</h2>
+                <p class="para">The Hostel is amazing! I love it!</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+            <div class="review">
+                <h2 class="review-name">Jane Smith</h2>
+                <p class="para">Not bad, but could be better.</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="add-review">
+            <h2 class="review-heading">Add Your Review</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <textarea id="review" placeholder="Your Review"></textarea>
+            <p>Rating: <span id="rating">0</span> / 5</p>
+            <div class="rating">
+                <span class="star" onclick="setRating(1)">&#9733;</span>
+                <span class="star" onclick="setRating(2)">&#9733;</span>
+                <span class="star" onclick="setRating(3)">&#9733;</span>
+                <span class="star" onclick="setRating(4)">&#9733;</span>
+                <span class="star" onclick="setRating(5)">&#9733;</span>
+            </div>
+            <button onclick="submitReview()">Submit</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Developed by VIT-AP</h5>
+        <p class="card-text">This is Developed during National Level Hackathon Conducted at VIT-AP </p>
+        <a href="https://vitap.ac.in/" class="btn btn-primary">Vit-AP</a>
+      </div>
+      <div class="card-footer text-muted">
+        <span>&copy;2023.All rights Reserved</span>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+    </body>
+    </html>
